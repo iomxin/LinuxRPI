@@ -1,6 +1,12 @@
-var http = require('http');
+var express = require("express");
+var app = express();
+var router = express.Router();
+var path = require('path');
 
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('Hello World!');
-}).listen(8080);
+router.get('/',function(req,res){
+    res.sendFile(path.join(__dirname+'/aomsin.html'));
+});
+
+app.use('/',router);
+app.listen(3013)
+console.log('Server running on port 3013');
