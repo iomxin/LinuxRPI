@@ -1,0 +1,62 @@
+body{
+   background-image: url('/static/nbg.jpg');
+   background-size: 100% 100%;
+}
+.container{
+   display: grid;
+   color: chocolate;
+   font-weight: bold;
+   grid-template-rows: 1fr 2fr 1fr;
+   grid-template-columns: 2fr 3fr;
+   font-family: 'Montserrat', sans-serif;
+}
+.header{
+   background: #6f2232;
+   grid-column-start: 1;
+   grid-column-end: 3;
+
+}
+.main{
+   background: #950740;
+
+
+}
+.sidebar{
+   background: #c3073f;
+
+}
+.footer{
+   background: #6f2232;
+   grid-column-start: 1;
+   grid-column-end: 3;
+   height: 50px;
+}
+.headpic{
+   width: 100%;
+   opacity: 0.3;
+   height: 400px;
+}
+.profile{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   transform: translate(0%, 10%);
+   width: 90%;
+}
+.pictext{
+   position: absolute;
+   top: 30%;
+   left: 50%;
+   transform: translate(-30%, -70%);
+   font-size: 70px; 
+   text-align: right;
+}
+.myprofile{
+   text-align: center;
+   font-size: 50px;
+   transform: translate(0%, 40%);
+}
+.copyright{
+   margin-top: 10px;
+   margin-left: 10px;
+}
